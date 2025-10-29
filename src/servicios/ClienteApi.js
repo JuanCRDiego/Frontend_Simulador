@@ -1,4 +1,4 @@
-const BASE_API = import.meta.env?.VITE_API_URL ?? 'http://localhost:4000/api'
+const BASE_API = 'https://juan-diego-backend-bcmxbv-ef361a-161-97-119-167.traefik.me/api'
 
 let tokenAcceso = null
 
