@@ -1,4 +1,4 @@
-const BASE_API = 'https://juan-diego-backend-bcmxbv-ef361a-161-97-119-167.traefik.me/api'
+const BASE_API = 'https://backend-simulador.vercel.app/api'
 
 let tokenAcceso = null
 
