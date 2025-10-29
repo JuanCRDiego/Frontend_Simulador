@@ -193,5 +193,15 @@ function formatearFecha(fecha) {
   if (!fecha) return 'Fecha desconocida'
   const d = new Date(fecha)
   if (Number.isNaN(d.getTime())) return fecha
-  return d.toLocaleString()
+  // Formatear la fecha usando la zona horaria del usuario pero con formato específico
+  return d.toLocaleString('es-CO', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+    timeZone: 'America/Bogota'  // Zona horaria de Colombia
+  })
 }
