@@ -1,0 +1,5 @@
+export { crearConfigPotencia } from './configPotencia.jsx'
+export { crearConfigEnergia } from './configEnergia.jsx'
+export { crearConfigFuerzasConservativas } from './configFuerzasConservativas.jsx'
+export { crearConfigTrabajoConstante } from './configTrabajoConstante.jsx'
+export { crearConfigTrabajoVariable } from './configTrabajoVariable.jsx'

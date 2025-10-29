@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Utilidades complementarias para cards y layout */
+.card {
+  @apply bg-white/95 border border-slate-200 rounded-xl shadow-card p-4;
+}
+
+.header-bar {
+  @apply w-full bg-teal-700 text-white py-3 relative shadow;
+}
+
+.header-title {
+  @apply text-center font-semibold text-lg;
+}
+
+.pill-time {
+  @apply absolute right-4 top-2 bg-orange-500 text-white text-sm px-3 py-1 rounded-full shadow;
+}
+
+.aside-sand {
+  @apply bg-[#F3C9A3] border border-amber-200 rounded-xl p-4 shadow-card;
+}
+
+.panel-mint {
+  @apply bg-emerald-50 border border-emerald-100 rounded-xl p-4 shadow-card;
+}
+
+.btn {
+  @apply rounded-lg px-4 py-2 font-medium shadow-sm transition-colors;
+}
+.btn-green { @apply bg-emerald-600 text-white hover:bg-emerald-700; }
+.btn-red { @apply bg-rose-500 text-white hover:bg-rose-600; }
+.btn-purple { @apply bg-violet-600 text-white hover:bg-violet-700; }
+.btn-outline { @apply border border-slate-300 text-slate-700 bg-white hover:bg-slate-50; }
+
+/* Canvas wrap */
+.stage-wrap { @apply bg-teal-800/10 rounded-xl p-3 border border-teal-200; }
+
+/* Tablas administrativas */
+.tabla-wrapper {
+  @apply rounded-2xl border border-slate-200 bg-white/95 shadow-card overflow-hidden;
+}
+
+.tabla-resumen {
+  @apply w-full min-w-full border-collapse text-left text-sm;
+}
+
+.tabla-resumen thead tr {
+  @apply bg-slate-50/90;
+}
+
+.tabla-resumen thead th {
+  @apply px-4 py-2 text-[11px] font-semibold uppercase tracking-wide text-slate-500;
+}
+
+.tabla-resumen tbody tr {
+  @apply border-t border-slate-200 transition-colors;
+}
+
+.tabla-resumen tbody tr:hover {
+  @apply bg-slate-50/80;
+}
+
+.tabla-resumen tbody tr:last-child td {
+  @apply border-b-0;
+}
+
+.tabla-resumen td {
+  @apply px-4 py-3 text-sm text-slate-700 align-top;
+}
+
+.tabla-resumen td .dato-principal {
+  @apply font-semibold text-slate-800;
+}
+
+.tabla-resumen td .dato-secundario {
+  @apply text-xs text-slate-500 break-words;
+}
+
+.estado-pill {
+  @apply inline-flex items-center gap-1 rounded-full border px-2 py-1 text-[11px] font-semibold uppercase tracking-wide;
+}
+
+.resumen-tag {
+  @apply inline-flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-slate-600;
+}
+
+/* Modal contenido temático */
+.modal-overlay {
+  @apply fixed inset-0 z-50 grid place-items-center bg-black/50 p-4;
+}
+
+.modal-card {
+  @apply w-[min(95%,900px)] bg-white rounded-2xl shadow-card p-6 grid gap-4;
+}
+
+.modal-scroll {
+  @apply max-h-[75vh] overflow-y-auto pr-2 space-y-4;
+}
+
+.modal-section {
+  @apply bg-slate-50 border border-slate-200 rounded-xl p-4 shadow-sm space-y-2;
+}
+
+.modal-section h4,
+.modal-heading {
+  @apply text-sm font-semibold text-slate-800 uppercase tracking-wide;
+}
+
+.modal-text {
+  @apply text-sm leading-relaxed text-slate-700;
+}
+
+.modal-list {
+  @apply list-disc pl-5 text-sm text-slate-700 space-y-1;
+}
+
+.modal-tag {
+  @apply inline-flex items-center rounded-full bg-slate-200 text-slate-700 text-xs font-semibold uppercase tracking-wide px-3 py-1;
+}
+
+/* Cards temáticas */
+.tema-card {
+  @apply relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card transition-all hover:-translate-y-1 hover:shadow-lg;
+}
+
+.tema-card::before {
+  content: "";
+  @apply absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-400 via-teal-500 to-slate-600;
+}
+
+.tema-card-body {
+  @apply p-4 pt-5 space-y-2;
+}
+
+.tema-card h3 {
+  @apply text-lg font-semibold text-slate-900;
+}
+
+.tema-card .estado-pill {
+  @apply text-xs font-semibold uppercase tracking-wide;
+}
+
+.tema-card p {
+  @apply text-sm text-slate-600 leading-relaxed;
+}
+
+.tema-card-footer {
+  @apply px-4 pb-4 flex justify-end;
+}
