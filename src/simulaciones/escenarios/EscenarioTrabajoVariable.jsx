@@ -46,7 +46,7 @@ export function EscenarioTrabajoVariable({
             src="/assets/cajaTrabajo.jpg"
             alt="Caja"
             className="h-32 transition-transform duración-150 ease-linear"
-            style={{ transform: `translate(${posicionCajaPx}px, 20px)` }}
+            style={{ transform: `translate(${posicionCajaPx}px, -10px)` }}
           />
         </div>
 
