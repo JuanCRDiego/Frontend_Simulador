@@ -32,7 +32,7 @@ export function EscenarioTrabajoVariable({
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'url(/assets/cespedTrabajo.png)',
+          backgroundImage: 'url(/assets/arenaVariable.jpg)',
           backgroundRepeat: 'repeat-x',
           backgroundSize: 'auto 100%',
           backgroundPositionX: `${offset}px`,
